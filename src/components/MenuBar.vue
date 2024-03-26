@@ -1,28 +1,13 @@
 
 <template>
-    <div>
-        <button type="button" ><a href="/">Movies</a></button>
-        <button type="button" ><a href="/tvshows">Tv Shows</a></button>
+    <div class="px-4 flex justify-between fixed bottom-0 bg-[#248588] w-full h-12 text-white" >
+        <button type="button" @click="">Movies</button>
+        <button type="button" @click="">Tv Shows</button>
         <button type="button" ><a href="/signin">Profile</a></button>
     </div>
 </template>
 
 <script setup>
-    
+
 </script>
 
-<style scoped>
-    div{
-        padding: 0 1rem;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        bottom: 0;
-        background-color: #248588;
-        width: 100%;
-        height: 3rem;
-    }
-    button{
-        color: #FFFFFF;
-    }
-</style>
