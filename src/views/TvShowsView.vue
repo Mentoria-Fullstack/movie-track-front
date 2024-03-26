@@ -8,13 +8,13 @@ import { reactive, onMounted } from 'vue'
 const data = reactive({})
 
 onMounted(async () => {
-  const response = await axios.get('http://192.168.0.109:80/api/tvshows')
+  const response = await axios.get('http://localhost/api/tvshows')
   data.value = response.data
 })
     
 </script>
 <template>
-  <SearchBar/>
+  <!-- <SearchBar/> -->
   <div class="bg-[#263537] pb-12 p-5">
     <div class="" v-for="movie in data.value">
       <MediaCard 
